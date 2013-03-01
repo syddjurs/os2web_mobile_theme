@@ -10,7 +10,7 @@ function os2web_mobile_theme_preprocess_page(&$vars) {
   $theme_path = drupal_get_path('theme', $theme);
 
   if(file_exists($theme_path.'/logo.png')){
-    $vars['logo'] = $theme_path . '/logo.png';
+    $vars['logo'] = '/' . $theme_path . '/logo.png';
   }
   
   if(file_exists($theme_path.'/mobile/mobile.css')){
