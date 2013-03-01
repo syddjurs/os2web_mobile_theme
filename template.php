@@ -5,7 +5,7 @@
  *  os2web mobile subtheme for bootstrap
  */
 
-function os2web_mobile_preprocess_page(&$vars) {
+function os2web_mobile_theme_preprocess_page(&$vars) {
   $theme = variable_get('theme_default');
   $theme_path = drupal_get_path('theme', $theme);
 
@@ -22,7 +22,7 @@ function os2web_mobile_preprocess_page(&$vars) {
 /*
  * Implements hook_breadcrumb()
  */
-function os2web_mobile_breadcrumb($variables) {
+function os2web_mobile_theme_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
   if(arg(0) !== 'mobile') {
     unset($breadcrumb[1]);
@@ -33,7 +33,7 @@ function os2web_mobile_breadcrumb($variables) {
 /*
  * Implements hook_preprocess_panels_pane()
  */
-function os2web_mobile_preprocess_panels_pane(&$vars) {
+function os2web_mobile_theme_preprocess_panels_pane(&$vars) {
   // if the panel pane is of type block and subtype contains
   // menu_block, we want to use a custom template 
   if($vars['pane']->type == 'block') {
