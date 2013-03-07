@@ -2,11 +2,23 @@
   <div class="navbar-inner">
     <div class="container">
 
-
       <?php if ($logo): ?>
         <a class="logo pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
+        <span class="pull-right goto-full">
+          <?php 
+            // redirect to full width needs a little logic.
+            $url = explode('.', $_SERVER['HTTP_HOST']);
+            array_shift($url);
+            $full_width_url = 'http://'.implode('.', $url);
+            if($_SERVER['REDIRECT_URL'] !== '/mobile') {
+              $full_width_url = 'http://'.implode('.', $url) . $_SERVER['REDIRECT_URL'];
+            } 
+          ?>
+          <?php print t('This page is customized for your phone'); ?> -
+          <a href="<?php print $full_width_url; ?>"><?php print t('Go to full width'); ?></a>
+        </span>
       <?php endif; ?>
 
       <?php if ($site_name): ?>
@@ -53,12 +65,6 @@
       <?php endif; ?>
       <?php print render($page['mobile_content']); ?>
     </section>
-
-    <?php if ($page['sidebar_second']): ?>
-      <aside class="span3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
 
   </div>
   <footer class="footer container">

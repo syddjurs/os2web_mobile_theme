@@ -1,0 +1,18 @@
+.control-group.form-type-textfield.form-item-search-block-form.form-item {
+  width: 80%;
+}
+#edit-search-block-form--2 {
+  width: 90%;
+}
+.goto-full {
+  width: 30%;
+}
+
+ul.nav {
+  margin: 0 0 10px 25px;
+  list-style: disc;
+}
+
+.menu-toggle {
+  margin: 0 0 10px 0;
+}

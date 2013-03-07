@@ -1,7 +1,8 @@
 (function ($) {
   Drupal.behaviors.exampleModule = {
     attach: function (context, settings) {
-      $('[class*=pane-menu-block]').find('h5').each(function(){
+      $('[class*=pane-menu-block]').not('.no-toggle').find('h4').each(function(){
+        $(this).append('<i class="icon-chevron-down pull-right"></i>');
         $(this).wrap('<span class="btn btn-block btn-mini menu-toggle" />');
       });
 
@@ -11,6 +12,8 @@
       });
       
       $('.menu-name-menu-indholdsmenu').hide();
+
+      $('[class*=views_slideshow_controls_text_]').addClass('btn');
     }
   };
 }(jQuery));

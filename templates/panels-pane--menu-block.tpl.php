@@ -19,7 +19,7 @@
 ?>
 <div class="<?php print $classes; ?>" <?php print $id; ?>>
   <?php if ($title): ?>
-    <h5 class="pane-title"><?php print $title; ?><i class="icon-chevron-down pull-right"></i></h5>
+    <h4 class="pane-title"><?php print $title; ?></h4>
   <?php endif; ?>
   <div class="pane-content">
     <?php print render($content); ?>
