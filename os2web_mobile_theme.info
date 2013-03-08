@@ -11,9 +11,10 @@ stylesheets[all][] = os2web_mobile.css
 
 scripts[] = js/os2web_mobile.js
 
+plugins[panels][layouts] = panels/layouts
+
 settings[toggle_name] = 0
 settings[toggle_search] = 1
-
 settings[toggle_logo] = '1'
 settings[toggle_name] = '0'
 settings[toggle_slogan] = '0'

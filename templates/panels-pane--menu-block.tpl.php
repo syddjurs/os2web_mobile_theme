@@ -19,7 +19,7 @@
 ?>
 <div class="<?php print $classes; ?>" <?php print $id; ?>>
   <?php if ($title): ?>
-    <h4 class="pane-title"><?php print $title; ?></h4>
+    <h3 class="pane-title"><?php print $title; ?></h3>
   <?php endif; ?>
   <div class="pane-content">
     <?php print render($content); ?>

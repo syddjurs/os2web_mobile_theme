@@ -16,3 +16,16 @@ ul.nav {
 .menu-toggle {
   margin: 0 0 10px 0;
 }
+
+.icon-chevron-down-large {
+  background-image: url(images/chevron-down-large.png);
+  height: 32px;
+  width: 32px;
+  background-position: 0 0;
+}
+.icon-chevron-up-large {
+  background-image: url(images/chevron-up-large.png);
+  height: 32px;
+  width: 32px;
+  background-position: 0 0;
+}

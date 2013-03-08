@@ -6,7 +6,7 @@
         <a class="logo pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
-        <span class="pull-right goto-full">
+        <span class="pull-right goto-full fine-print">
           <?php 
             // redirect to full width needs a little logic.
             $url = explode('.', $_SERVER['HTTP_HOST']);
