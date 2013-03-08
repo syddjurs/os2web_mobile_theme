@@ -65,8 +65,7 @@
       <?php endif; ?>
       <?php print render($page['mobile_content']); ?>
     </section>
-
-  </div>
+   </div>
   <footer class="footer container">
     <?php print render($page['footer']); ?>
   </footer>

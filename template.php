@@ -18,6 +18,9 @@ function os2web_mobile_theme_preprocess_page(&$vars) {
     drupal_add_css($theme_path .'/mobile/mobile.css', array('group' => CSS_THEME));
   }
 
+  if (file_exists($theme_path.'/mobile/mobile.js')) {
+    drupal_add_js($theme_path .'/mobile/mobile.js');
+  }
 }
 
 /*

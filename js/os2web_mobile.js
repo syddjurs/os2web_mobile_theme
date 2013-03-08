@@ -1,5 +1,5 @@
 (function ($) {
-  Drupal.behaviors.exampleModule = {
+  Drupal.behaviors.os2web_mobile_theme = {
     attach: function (context, settings) {
       $('[class*=pane-menu-block]').not('.no-toggle').find('h3').each(function(){
         $(this).append('<i class="icon-chevron-down-large pull-right"></i>');
