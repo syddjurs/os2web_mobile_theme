@@ -29,3 +29,20 @@ ul.nav {
   width: 32px;
   background-position: 0 0;
 }
+
+.fine-print {
+  font-size: 12px;
+}
+
+#search-block-form #edit-submit:after {
+  content: "Søg";
+}
+
+h3 i {
+  right: 30px;  
+  position: relative;
+  top: 5px;
+}
+
+
+
