@@ -1,7 +1,6 @@
 <header id="navbar" role="banner" class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-
       <?php if ($logo): ?>
         <a class="logo pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -16,8 +15,8 @@
               $full_width_url = 'http://'.implode('.', $url) . $_SERVER['REDIRECT_URL'];
             } 
           ?>
-          <?php print t('This page is customized for your phone'); ?> -
-          <a href="<?php print $full_width_url; ?>"><?php print t('Go to full width'); ?></a>
+          
+          <a href="<?php print $full_width_url; ?>" rel="canonical" class="full-width-link"></a>
         </span>
       <?php endif; ?>
 

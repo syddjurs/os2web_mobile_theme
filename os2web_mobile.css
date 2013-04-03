@@ -1,6 +1,7 @@
 .control-group.form-type-textfield.form-item-search-block-form.form-item {
   width: 80%;
 }
+#edit-keys,
 #edit-search-block-form--2 {
   width: 90%;
 }
@@ -13,23 +14,6 @@ ul.nav {
   list-style: disc;
 }
 
-.menu-toggle {
-  margin: 0 0 10px 0;
-}
-
-.icon-chevron-down-large {
-  background-image: url(images/chevron-down-large.png);
-  height: 32px;
-  width: 32px;
-  background-position: 0 0;
-}
-.icon-chevron-up-large {
-  background-image: url(images/chevron-up-large.png);
-  height: 32px;
-  width: 32px;
-  background-position: 0 0;
-}
-
 .fine-print {
   font-size: 12px;
 }
@@ -38,11 +22,7 @@ ul.nav {
   content: "Søg";
 }
 
-h3 i {
-  right: 30px;  
-  position: relative;
-  top: 5px;
+.full-width-link:before {
+    content: "Se siden i fuld bredde";
 }
-
-
 
