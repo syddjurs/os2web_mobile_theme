@@ -19,13 +19,6 @@
           <a href="<?php print $full_width_url; ?>" rel="canonical" class="full-width-link"></a>
         </span>
       <?php endif; ?>
-
-      <?php if ($site_name): ?>
-        <h1 id="site-name">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="brand"><?php print $site_name; ?></a>
-        </h1>
-      <?php endif; ?>
-
     </div>
   </div>
 </header>
