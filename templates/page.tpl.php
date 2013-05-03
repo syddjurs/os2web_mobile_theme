@@ -1,3 +1,9 @@
+<?php
+/**
+ * @file
+ * os2web_mobile.inc
+ */
+?>
 <header id="navbar" role="banner" class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -6,16 +12,16 @@
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
         <span class="pull-right goto-full fine-print">
-          <?php 
-            // redirect to full width needs a little logic.
+          <?php
+            // Redirect to full width needs a little logic..
             $url = explode('.', $_SERVER['HTTP_HOST']);
             array_shift($url);
-            $full_width_url = 'http://'.implode('.', $url);
-            if($_SERVER['REDIRECT_URL'] !== '/mobile') {
-              $full_width_url = 'http://'.implode('.', $url) . $_SERVER['REDIRECT_URL'];
-            } 
+            $full_width_url = 'http://' . implode('.', $url);
+            if ($_SERVER['REDIRECT_URL'] !== '/mobile') :
+              $full_width_url = 'http://' . implode('.', $url) . $_SERVER['REDIRECT_URL'];
+            endif;
           ?>
-          
+
           <a href="<?php print $full_width_url; ?>" rel="canonical" class="full-width-link"></a>
         </span>
       <?php endif; ?>
@@ -26,7 +32,7 @@
 <div class="container">
 
   <header role="banner" id="page-header">
-    <?php if ( $site_slogan ): ?>
+    <?php if ($site_slogan): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
 
@@ -35,7 +41,7 @@
 
   <div class="row">
 
-    <section class="<?php print _bootstrap_content_span($columns); ?>">  
+    <section class="<?php print _bootstrap_content_span($columns); ?>">
       <?php if ($page['highlighted']): ?>
         <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
@@ -49,7 +55,7 @@
       <?php if ($tabs): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
-      <?php if ($page['help']): ?> 
+      <?php if ($page['help']): ?>
         <div class="well"><?php print render($page['help']); ?></div>
       <?php endif; ?>
       <?php if ($action_links): ?>
