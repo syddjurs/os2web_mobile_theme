@@ -1,6 +1,7 @@
 <?php
 /**
- * @file panels-pane.tpl.php
+ * @file
+ * panels-pane.tpl.php
  * Menu block panel pane template
  *
  * Variables available:

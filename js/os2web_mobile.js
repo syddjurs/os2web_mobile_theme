@@ -11,7 +11,7 @@
         $(this).parent().find('[class*=menu-block-OS2Web_mobile]').toggle();
         $(this).parent().find('i').toggleClass('icon-chevron-down').toggleClass('icon-chevron-up');
       });
-      
+
       $('[class*=menu-block-OS2Web_mobile]').not('.menu-level-3').hide();
       $('.pane-menu-block-os2web-mobile-18').find('i').toggleClass('icon-chevron-down').toggleClass('icon-chevron-up');
 
