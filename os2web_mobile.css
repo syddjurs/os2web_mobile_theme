@@ -25,4 +25,6 @@ ul.nav {
 .full-width-link:before {
     content: "Se siden i fuld bredde";
 }
-
+article.node iframe {
+    width: 100% !important;
+}
